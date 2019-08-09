@@ -16,7 +16,7 @@ class Palette(object):
 
     def build(self):
         vboxs = list()
-        for col_i, widgets in enumerate(self.widgets):
+        for widgets in self.widgets:
             col_widgets = [widget for widget in widgets]
             vboxs.append(wids.VBox(col_widgets))
         self.widget = wids.HBox(vboxs)
